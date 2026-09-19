@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 168">
+<defs>
+  <linearGradient id="tFace" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#D08060"/>
+    <stop offset="40%" stop-color="#C47848"/>
+    <stop offset="100%" stop-color="#A85030"/>
+  </linearGradient>
+  <linearGradient id="tSide" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#B86038"/>
+    <stop offset="100%" stop-color="#904020"/>
+  </linearGradient>
+  <linearGradient id="grassG" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#88DC40"/>
+    <stop offset="100%" stop-color="#58A020"/>
+  </linearGradient>
+  <filter id="tDrop">
+    <feDropShadow dx="3" dy="5" stdDeviation="5" flood-color="rgba(80,30,0,0.28)"/>
+  </filter>
+  <filter id="cF"><feGaussianBlur stdDeviation="1.5"/></filter>
+</defs>
+<!-- Grass and shadow -->
+<ellipse cx="60" cy="162" rx="50" ry="8" fill="rgba(40,80,0,0.18)" filter="url(#cF)"/>
+<ellipse cx="60" cy="158" rx="50" ry="14" fill="url(#grassG)"/>
+<ellipse cx="60" cy="154" rx="42" ry="10" fill="#90E048"/>
+<rect x="18" y="148" width="84" height="12" rx="6" fill="url(#grassG)"/>
+
+<!-- Tower (tilted 5° right) -->
+<g transform="rotate(5,55,90)" filter="url(#tDrop)">
+  <!-- Ground level -->
+  <rect x="16" y="93" width="76" height="58" rx="5" fill="url(#tFace)" stroke="#955028" stroke-width="1.2"/>
+  <!-- Brick lines base -->
+  <line x1="16" y1="108" x2="92" y2="108" stroke="rgba(0,0,0,0.10)" stroke-width="1"/>
+  <line x1="16" y1="123" x2="92" y2="123" stroke="rgba(0,0,0,0.10)" stroke-width="1"/>
+  <line x1="16" y1="138" x2="92" y2="138" stroke="rgba(0,0,0,0.10)" stroke-width="1"/>
+  <line x1="54" y1="93" x2="54" y2="151" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
+  <!-- Main arch / door opening -->
+  <path d="M 30,151 L 30,122 Q 54,109 78,122 L 78,151 Z" fill="#621A08" opacity="0.75"/>
+  <path d="M 32,151 L 32,124 Q 54,113 76,124 L 76,151 Z" fill="#401008" opacity="0.5"/>
+  <!-- Left shadow -->
+  <rect x="16" y="93" width="9" height="58" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <!-- Right shadow -->
+  <rect x="83" y="93" width="9" height="58" rx="2" fill="rgba(0,0,0,0.08)"/>
+
+  <!-- Level 2 -->
+  <rect x="20" y="58" width="68" height="38" rx="4" fill="url(#tFace)" stroke="#905028" stroke-width="1.2"/>
+  <line x1="20" y1="73" x2="88" y2="73" stroke="rgba(0,0,0,0.10)" stroke-width="1"/>
+  <line x1="20" y1="87" x2="88" y2="87" stroke="rgba(0,0,0,0.10)" stroke-width="1"/>
+  <!-- Arches level 2 -->
+  <path d="M 26,96 Q 26,82 44,82 Q 54,82 54,96" fill="rgba(0,0,0,0.28)"/>
+  <path d="M 54,96 Q 54,82 66,82 Q 82,82 82,96" fill="rgba(0,0,0,0.28)"/>
+  <rect x="20" y="58" width="8" height="38" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="80" y="58" width="8" height="38" rx="2" fill="rgba(0,0,0,0.07)"/>
+
+  <!-- Level 3 -->
+  <rect x="24" y="26" width="60" height="36" rx="4" fill="url(#tFace)" stroke="#905028" stroke-width="1.2"/>
+  <line x1="24" y1="41" x2="84" y2="41" stroke="rgba(0,0,0,0.10)" stroke-width="1"/>
+  <line x1="24" y1="55" x2="84" y2="55" stroke="rgba(0,0,0,0.10)" stroke-width="1"/>
+  <path d="M 32,62 Q 32,50 54,50 Q 76,50 76,62" fill="rgba(0,0,0,0.24)"/>
+  <rect x="24" y="26" width="8" height="36" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="76" y="26" width="8" height="36" rx="2" fill="rgba(0,0,0,0.07)"/>
+
+  <!-- Battlements bar -->
+  <rect x="24" y="14" width="60" height="16" rx="3" fill="url(#tSide)" stroke="#804020" stroke-width="1"/>
+  <!-- 4 merlons -->
+  <rect x="24" y="8"  width="12" height="16" rx="3" fill="url(#tFace)" stroke="#905028" stroke-width="1"/>
+  <rect x="40" y="8"  width="12" height="16" rx="3" fill="url(#tFace)" stroke="#905028" stroke-width="1"/>
+  <rect x="56" y="8"  width="12" height="16" rx="3" fill="url(#tFace)" stroke="#905028" stroke-width="1"/>
+  <rect x="72" y="8"  width="12" height="16" rx="3" fill="url(#tFace)" stroke="#905028" stroke-width="1"/>
+</g>
+
+<!-- Small cloud -->
+<g opacity="0.92">
+  <ellipse cx="97" cy="27" rx="18" ry="10" fill="rgba(255,255,255,0.94)"/>
+  <ellipse cx="83" cy="30" rx="15" ry="14" fill="rgba(255,255,255,0.94)"/>
+  <ellipse cx="105" cy="31" rx="13" ry="11" fill="rgba(255,255,255,0.90)"/>
+  <ellipse cx="97" cy="36" rx="14" ry="6" fill="rgba(180,210,230,0.35)" filter="url(#cF)"/>
+</g>
+<!-- Stars -->
+<text x="4"  y="26" font-size="15" fill="rgba(80,180,30,0.65)" font-family="serif">★</text>
+<text x="84" y="11" font-size="12" fill="rgba(255,200,0,0.80)" font-family="serif">★</text>
+</svg>
